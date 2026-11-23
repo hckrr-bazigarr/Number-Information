@@ -97,7 +97,7 @@ api_key = "YOUR_API_KEY"
 
 base_url = "YOUR_API_ENDPOINT"
 
-<text>Important: Never expose real API keys, private credentials, or sensitive endpoints in a public GitHub repository.</text>
+«Important: Never expose real API keys, private credentials, or sensitive endpoints in a public GitHub repository.»
 
 ---
 
