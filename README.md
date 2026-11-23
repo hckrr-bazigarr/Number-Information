@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/bazigarr-logo.png" width="500" alt="BAZIGARR Logo">
+  <img src="assets/bazigarr-logo.jpg" width="500" alt="BAZIGARR Logo">
 </p><h1 align="center">🕵️ BaziGarr OSINT Tool</h1><p align="center">
   <b>Advanced Mobile Number Information Lookup Tool</b>
   <br>
