@@ -1,147 +1,156 @@
-🕵️ BaziGarr OSINT Tool
-
-<p align="center">Advanced Mobile Number Information Lookup Tool
-
-Developed & Maintained by BaziGarr
-
-"Python" (https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white)
-"Platform" (https://img.shields.io/badge/Platform-Termux%20%7C%20Kali%20Linux-green?style=for-the-badge)
-"API" (https://img.shields.io/badge/API-Integrated-red?style=for-the-badge)
-"License" (https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
-
+<p align="center">
+  <img src="assets/bazigarr-logo.png" width="500" alt="BAZIGARR Logo">
+</p><h1 align="center">🕵️ BaziGarr OSINT Tool</h1><p align="center">
+  <b>Advanced Mobile Number Information Lookup Tool</b>
+  <br>
+  Developed & Maintained by <b>BaziGarr</b>
+</p><p align="center">
+  <img src="https://img.shields.io/badge/Version-3.0-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Platform-Termux%20%7C%20Kali-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Category-OSINT-black?style=for-the-badge">
 </p>---
 
 ⚡ About
 
-BaziGarr OSINT Tool is a Python-based mobile number information lookup utility designed with a terminal-based interface.
+BaziGarr OSINT Tool is a Python-based mobile number information lookup utility designed with a customized terminal interface.
 
-The tool sends a mobile number to a configured API endpoint and displays the returned information in a structured and readable format.
+The tool communicates with a configured API endpoint and displays the returned information in a structured and readable format.
 
-It features a custom terminal banner, animated loading progress, colored output, and Base64-protected source code.
+Built with a custom BaziGarr ASCII banner, animated loading progress, colored terminal output, multiple-result handling, and Base64-encoded source code.
 
-Built for educational purposes and authorized OSINT research.
+Designed for educational purposes and authorized OSINT research.
 
 ✨ Features
 
 - 🔍 Mobile Number Information Lookup
 - 🌐 API-Based Information Retrieval
-- 🎨 Colored Terminal Interface
+- 📊 Multiple Result Handling
+- 🎨 Custom Green Terminal Interface
+- 🔴 BaziGarr Custom ASCII Banner
 - ⚡ Animated Loading Progress Bar
-- 📊 Structured Search Results
-- 🔐 Base64-Protected Source Code
-- 🖥️ Custom BaziGarr Terminal Banner
+- 📱 10-Digit Mobile Number Validation
+- 🗂️ Structured Information Display
+- 🔐 Base64-Encoded Source Payload
 - 🐍 Python-Based Implementation
-- 📱 Termux & Kali Linux Compatibility
+- 📟 Termux & Kali Linux Compatibility
 
 📸 Tool Preview
 
-=========================================
-        BAZIGARR OSINT TOOL
-=========================================
-
-[+] Enter Number - 10 Digit:
-
-[>] Initializing OSINT Engine...
-[>>>>>>>>>>>>>>>>>>>>>>>>>] 100% ✔
-
-[+] Result Found!
-
---- Result 1 ---
-Name: Example
-Number: XXXXXXXX
-Information: API Returned Data
-
-=========================================
-        Powered By BaziGarr
-=========================================
-
-Preview is illustrative. Actual results depend on the configured API.
-
-🛠️ Requirements
+<p align="center">
+  <img src="assets/terminal-preview.png" width="700" alt="BaziGarr OSINT Tool Preview">
+</p><p align="center">
+  <i>BaziGarr OSINT Engine PRO — Terminal Preview</i>
+</p>🛠️ Requirements
 
 - Python 3.x
 - Requests library
 - Active API endpoint
+- Valid API credentials
 - Internet connection
 
 🚀 Installation
 
-Step 1 — Clone Repository
+Step 1 — Update Packages
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+pkg update && pkg upgrade -y
 
-Step 2 — Navigate to Project
+Step 2 — Install Git & Python
 
-cd YOUR_REPOSITORY_NAME
+pkg install git python -y
 
-Step 3 — Install Dependencies
+Step 3 — Clone Repository
+
+git clone https://github.com/hckrr-bazigarr/Number-Information.git
+
+Step 4 — Navigate to Directory
+
+cd Number-Information
+
+Step 5 — Install Requirements
 
 pip install requests
 
-Step 4 — Run the Tool
+Step 6 — Run the Tool
 
 python3 main.py
 
-«Replace "main.py" with the actual Python filename in your repository.»
+«Replace "main.py" with your actual Python script filename if it is different.»
 
 ⚙️ API Configuration
 
-The tool communicates with a configured API endpoint to retrieve information.
+The tool uses an external API endpoint to retrieve information.
 
-Before running the tool, configure your own authorized API credentials.
+Configure your authorized API credentials in the source code or through environment variables.
 
-Find the API configuration section in the source code:
+Example:
 
 api_key = "YOUR_API_KEY"
 
 base_url = "YOUR_API_ENDPOINT"
 
-Important: Never publish your real API key in a public GitHub repository.
-
-For production use, store API credentials in environment variables instead of hardcoding them.
+Important: Never expose real API keys, private credentials, or sensitive endpoints in a public repository.
 
 🔐 Source Code Protection
 
-The source code is stored in Base64-encoded format and decoded at runtime using Python's built-in "base64" module.
+The project uses Base64 encoding to store its Python source payload.
+
+The encoded payload is decoded and executed at runtime.
+
+Example:
 
 decoded = base64.b64decode(_payload).decode("utf-8")
+
 exec(decoded, globals())
 
-Note: Base64 is an encoding mechanism, not encryption. Anyone with access to the payload can decode it. Do not use it to protect API keys or sensitive credentials.
+Security Note: Base64 is encoding, not encryption. It does not prevent someone from recovering the original source code.
+
+Never store confidential credentials inside the encoded payload.
 
 📱 Supported Platforms
 
-Platform| Support
+Platform| Compatibility
 Android Termux| ✅
 Kali Linux| ✅
 Debian Linux| ✅
-Ubuntu| ✅
-Windows| ✅ (Python required)
+Ubuntu Linux| ✅
+Windows| ✅
+
+🖥️ How It Works
+
+1. Launch the Python script.
+2. Enter a valid 10-digit mobile number.
+3. The tool validates the input.
+4. The OSINT engine sends a request to the configured API.
+5. The API response is processed.
+6. Available results are displayed in the terminal.
 
 ⚠️ Disclaimer
 
-This project is intended strictly for educational purposes, authorized OSINT research, and legitimate information lookup.
+This project is developed strictly for educational purposes and authorized OSINT research.
 
-- Use the tool only with proper authorization.
-- Do not use it to invade anyone's privacy.
-- Do not use it for harassment, stalking, or illegal activities.
-- API responses depend entirely on the third-party service.
-- The developer is not responsible for misuse of this tool.
+- Use only with proper authorization.
+- Respect individual privacy and applicable data protection laws.
+- Do not use this tool for stalking, harassment, or unauthorized surveillance.
+- Do not misuse personal or confidential information.
+- API results depend on the external service and may be inaccurate or incomplete.
 
-Respect privacy. Follow applicable laws. Use responsibly.
+The developer assumes no responsibility for unauthorized or illegal use of this software.
+
+Use responsibly. Respect privacy. Stay ethical.
 
 👨‍💻 Developer
 
-<p align="center">BAZIGARR
-
-OSINT | Python | Cybersecurity | Linux
-
-GitHub: "@csrb4zzigar-07" (https://github.com/csrb4zzigar-07)
-
+<p align="center">
+  <b>BAZIGARR</b>
+  <br>
+  OSINT | Python | Cybersecurity | Linux
+  <br><br>
+  GitHub: <a href="https://github.com/hckrr-bazigarr">@hckrr-bazigarr</a>
 </p>---
 
-<p align="center">⚡ POWERED BY BAZIGARR ⚡
-
-Think Smart. Explore Responsibly.
-
+<p align="center">
+  <b>⚡ POWERED BY BAZIGARR ⚡</b>
+  <br>
+  <i>Think Smart. Explore Responsibly.</i>
 </p>
