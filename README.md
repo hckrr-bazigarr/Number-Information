@@ -1,3 +1,5 @@
+🕵️ BaziGarr OSINT Tool
+
 <p align="center">
   <img src="assets/bazigarr-logo.jpg" width="500" alt="BAZIGARR Logo">
 </p><h1 align="center">🕵️ BaziGarr OSINT Tool</h1><p align="center">
@@ -35,19 +37,25 @@ Designed for educational purposes and authorized OSINT research.
 - 🐍 Python-Based Implementation
 - 📟 Termux & Kali Linux Compatibility
 
+---
+
 📸 Tool Preview
 
 <p align="center">
   <img src="assets/terminal-previeww.jpg" width="700" alt="BaziGarr OSINT Tool Preview">
 </p><p align="center">
   <i>BaziGarr OSINT Engine PRO — Terminal Preview</i>
-</p>🛠️ Requirements
+</p>---
+
+🛠️ Requirements
 
 - Python 3.x
 - Requests library
 - Active API endpoint
 - Valid API credentials
 - Internet connection
+
+---
 
 🚀 Installation
 
@@ -73,9 +81,9 @@ pip install requests
 
 Step 6 — Run the Tool
 
-python3 main.py
+python3 num.py
 
-«Replace "main.py" with your actual Python script filename if it is different.»
+---
 
 ⚙️ API Configuration
 
@@ -89,7 +97,9 @@ api_key = "YOUR_API_KEY"
 
 base_url = "YOUR_API_ENDPOINT"
 
-Important: Never expose real API keys, private credentials, or sensitive endpoints in a public repository.
+<text>Important: Never expose real API keys, private credentials, or sensitive endpoints in a public GitHub repository.</text>
+
+---
 
 🔐 Source Code Protection
 
@@ -107,6 +117,8 @@ Security Note: Base64 is encoding, not encryption. It does not prevent someone f
 
 Never store confidential credentials inside the encoded payload.
 
+---
+
 📱 Supported Platforms
 
 Platform| Compatibility
@@ -116,6 +128,8 @@ Debian Linux| ✅
 Ubuntu Linux| ✅
 Windows| ✅
 
+---
+
 🖥️ How It Works
 
 1. Launch the Python script.
@@ -124,6 +138,8 @@ Windows| ✅
 4. The OSINT engine sends a request to the configured API.
 5. The API response is processed.
 6. Available results are displayed in the terminal.
+
+---
 
 ⚠️ Disclaimer
 
@@ -138,6 +154,8 @@ This project is developed strictly for educational purposes and authorized OSINT
 The developer assumes no responsibility for unauthorized or illegal use of this software.
 
 Use responsibly. Respect privacy. Stay ethical.
+
+---
 
 👨‍💻 Developer
 
