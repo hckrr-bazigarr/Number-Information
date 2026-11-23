@@ -50,38 +50,98 @@ Designed for educational purposes and authorized OSINT research.
 🛠️ Requirements
 
 - Python 3.x
+- Git
 - Requests library
 - Active API endpoint
 - Valid API credentials
 - Internet connection
 
 ---
+## 🚀 Installation
 
-🚀 Installation
+### 📱 Method 1 — Termux Installation
 
-Step 1 — Update Packages
-
+**Step 1 — Update Packages**
+```bash
 pkg update && pkg upgrade -y
+```
 
-Step 2 — Install Git & Python
-
+**Step 2 — Install Git & Python**
+```bash
 pkg install git python -y
+```
 
-Step 3 — Clone Repository
+**Step 3 — Clone Repository**
+```bash
+git clone [https://github.com/hckrr-bazigarr/Number-Information.git](https://github.com/hckrr-bazigarr/Number-Information.git)
+```
 
-git clone https://github.com/hckrr-bazigarr/Number-Information.git
-
-Step 4 — Navigate to Directory
-
+**Step 4 — Navigate to Directory**
+```bash
 cd Number-Information
+```
 
-Step 5 — Install Requirements
-
+**Step 5 — Install Requirements**
+```bash
 pip install requests
+```
 
-Step 6 — Run the Tool
-
+**Step 6 — Run the Tool**
+```bash
 python3 num.py
+```
+
+---
+
+### 🐉 Method 2 — Kali Linux Installation
+
+**Step 1 — Update System**
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+**Step 2 — Install Required Packages**
+```bash
+sudo apt install git python3 python3-pip python3-venv -y
+```
+
+**Step 3 — Clone Repository**
+```bash
+git clone [https://github.com/hckrr-bazigarr/Number-Information.git](https://github.com/hckrr-bazigarr/Number-Information.git)
+```
+
+**Step 4 — Navigate to Directory**
+```bash
+cd Number-Information
+```
+
+**Step 5 — Create Virtual Environment**
+```bash
+python3 -m venv venv
+```
+
+**Step 6 — Activate Virtual Environment**
+```bash
+source venv/bin/activate
+```
+
+**Step 7 — Install Requirements**
+```bash
+pip install requests
+```
+
+**Step 8 — Run the Tool**
+```bash
+python3 num.py
+```
+
+Virtual environment se bahar nikalne ke liye:
+```bash
+deactivate
+```
+
+
+«Note: Kali Linux uses a virtual environment to avoid the externally-managed-environment pip error.»
 
 ---
 
@@ -94,7 +154,6 @@ Configure your authorized API credentials in the source code or through environm
 Example:
 
 api_key = "YOUR_API_KEY"
-
 base_url = "YOUR_API_ENDPOINT"
 
 «Important: Never expose real API keys, private credentials, or sensitive endpoints in a public GitHub repository.»
@@ -110,7 +169,6 @@ The encoded payload is decoded and executed at runtime.
 Example:
 
 decoded = base64.b64decode(_payload).decode("utf-8")
-
 exec(decoded, globals())
 
 Security Note: Base64 is encoding, not encryption. It does not prevent someone from recovering the original source code.
