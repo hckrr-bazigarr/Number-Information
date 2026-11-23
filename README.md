@@ -38,7 +38,7 @@ Designed for educational purposes and authorized OSINT research.
 📸 Tool Preview
 
 <p align="center">
-  <img src="assets/terminal-preview.png" width="700" alt="BaziGarr OSINT Tool Preview">
+  <img src="assets/terminal-previeww.jpg" width="700" alt="BaziGarr OSINT Tool Preview">
 </p><p align="center">
   <i>BaziGarr OSINT Engine PRO — Terminal Preview</i>
 </p>🛠️ Requirements
