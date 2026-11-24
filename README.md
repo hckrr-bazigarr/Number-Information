@@ -222,8 +222,14 @@ Use responsibly. Respect privacy. Stay ethical.
   <br>
   OSINT | Python | Cybersecurity | Linux
   <br><br>
-  GitHub: <a href="https://github.com/hckrr-bazigarr">@hckrr-bazigarr</a>
-</p>---
+  <a href="https://github.com/hckrr-bazigarr">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.instagram.com/hckr__bazigarr/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+</p>
+  
 
 <p align="center">
   <b>⚡ POWERED BY BAZIGARR ⚡</b>
